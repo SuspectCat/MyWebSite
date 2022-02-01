@@ -12,11 +12,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-    <link rel="icon" href="../../images/favicon.ico">
-    <link rel="stylesheet" href="../../lib/layui-v2.6.3/css/layui.css" media="all">
-    <link rel="stylesheet" href="../../css/layuimini.css?v=2.0.4.2" media="all">
-    <link rel="stylesheet" href="../../css/themes/default.css" media="all">
-    <link rel="stylesheet" href="../../lib/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+    <link rel="icon" href="${pageContext.request.contextPath}/images/favicon.ico">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/lib/layui-v2.6.3/css/layui.css" media="all">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/layuimini.css?v=2.0.4.2" media="all">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/themes/default.css" media="all">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/lib/font-awesome-4.7.0/css/font-awesome.min.css"
+          media="all">
     <!--[if lt IE 9]>
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
@@ -137,7 +138,7 @@
             miniTongji = layui.miniTongji;
 
         var options = {
-            iniUrl: "api/init.json",    // 初始化接口
+            iniUrl: "api/init.json ",    // 初始化接口
             clearUrl: "api/clear.json", // 缓存清理接口
             urlHashLocation: true,      // 是否打开hash定位
             bgColorDefault: false,      // 主题默认配置

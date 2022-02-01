@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,6 +61,7 @@
             <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认保存</button>
         </div>
     </div>
+</div>
 </div>
 <script src="../../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
 <script>

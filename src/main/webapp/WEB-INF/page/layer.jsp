@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@
         <blockquote class="layui-elem-quote">
             大部分演示都在layer独立组件的官网，与内置的layer模块，用法是完全一致的
         </blockquote>
-        <a class="layui-btn layui-btn-normal" href="http://layer.layui.com/" target="_blank">前去layer官网</a>
+        <a class="layui-btn layui-btn-normal" href="http://layer.layui.com/layer.jsp" target="_blank">前去layer官网</a>
 
         <fieldset class="layui-elem-field layui-field-title site-demo-button" style="margin-top: 30px;">
             <legend>特殊例子</legend>

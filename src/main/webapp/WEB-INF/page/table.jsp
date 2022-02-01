@@ -1,3 +1,4 @@
+<%@page language="java" contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -133,7 +134,7 @@
                     maxmin:true,
                     shadeClose: true,
                     area: ['100%', '100%'],
-                    content: '../page/table/add.html',
+                    content: '../page/table/add.jsp',
                 });
                 $(window).on("resize", function () {
                     layer.full(index);
@@ -161,7 +162,7 @@
                     maxmin:true,
                     shadeClose: true,
                     area: ['100%', '100%'],
-                    content: '../page/table/edit.html',
+                    content: '../page/table/edit.jsp',
                 });
                 $(window).on("resize", function () {
                     layer.full(index);
