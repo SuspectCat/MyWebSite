@@ -99,7 +99,7 @@
     &copy;版权所有 2014-2018 叁贰柒工作室<span class="padding-5">|</span><a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP
     备16006642号-2</a>
 </div>
-<script src="../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+<script src="${pageContext.request.contextPath}/lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
 <script>
     layui.use(['form','jquery'], function () {
         var $ = layui.jquery,
