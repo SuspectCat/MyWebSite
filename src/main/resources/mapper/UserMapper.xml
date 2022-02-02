@@ -2,9 +2,22 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="goods">
-    <select id="selectGoods" resultType="com.qfcast.pojo.Goods">
-        select *
-        from Goods
+<mapper namespace="com.mapper.UserMapper">
+    <resultMap id="UserMap" type="user">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="gender" property="gender"></result>
+        <result column="age" property="age"></result>
+        <result column="authority" property="authority"></result>
+        <result column="password" property="password"></result>
+        <result column="status" property="status"></result>
+        <result column="headImage" property="headImage"></result>
+        <result column="account_create_time" property="accountCreateTime"></result>
+        <result column="account_out_time" property="account_out_time"></result>
+        <result column="username" property="username"></result>
+    </resultMap>
+
+    <select id="findUserByUsername" resultMap="UserMap">
+        select * from user where username = #{v} and status = 1;
     </select>
 </mapper>

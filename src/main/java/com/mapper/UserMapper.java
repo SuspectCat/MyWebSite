@@ -1,5 +1,7 @@
 package com.mapper;
 
-public interface UserMapper {
+import com.pojo.User;
 
+public interface UserMapper {
+    User findUserByUsername(String username);
 }
