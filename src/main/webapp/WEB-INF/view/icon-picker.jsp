@@ -23,14 +23,14 @@
 
         <div class="layui-form">
             <div class="layui-form-item">
-                <label for="" class="layui-form-label">默认图标</label>
+<%--                <label for="" class="layui-form-label">默认图标</label>--%>
                 <div class="layui-input-block">
                     <input type="text" id="iconPicker" lay-filter="iconPicker" class="hide">
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label for="" class="layui-form-label">自定义图标</label>
+<%--                <label for="" class="layui-form-label">自定义图标</label>--%>
                 <div class="layui-input-block">
                     <input type="text" id="iconPicker1" value="fa-arrows" lay-filter="iconPicker2" class="hide">
                 </div>
