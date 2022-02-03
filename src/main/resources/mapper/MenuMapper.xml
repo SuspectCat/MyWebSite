@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.MenuMapper">
+    <resultMap id="MenuMapBase" type="Menu">
+        <id column="menu_id" property="menuId"></id>
+        <result column="parent_id" property="parentId"></result>
+        <result column="title" property="title"></result>
+        <result column="href" property="href"></result>
+        <result column="icon" property="icon"></result>
+        <result column="target" property="target"></result>
+        <result column="is_parent" property="isParent"></result>
+        <result column="status" property="status"></result>
+    </resultMap>
+
+    <select id="findMenuList" resultMap="MenuMapBase">
+        select * from menu where status = 1;
+        <if test="menuId != 0">
+            and menu_id = #{menuId} or parent_id = #{menuId}
+        </if>
+    </select>
+
+    <select id="findMenuByUserId" resultMap="MenuMapBase">
+        select distinct
+    </select>
+</mapper>

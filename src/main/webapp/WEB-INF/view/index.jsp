@@ -139,7 +139,7 @@
             miniTongji = layui.miniTongji;
 
         var options = {
-            iniUrl: "${pageContext.request.contextPath}/api/init.json ",    // 初始化接口
+            iniUrl: "${pageContext.request.contextPath}/menu/menuinfo ",    // 初始化接口
             clearUrl: "${pageContext.request.contextPath}/api/clear.json", // 缓存清理接口
             urlHashLocation: true,      // 是否打开hash定位
             bgColorDefault: false,      // 主题默认配置
