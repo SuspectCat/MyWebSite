@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -128,8 +129,8 @@
 
     </div>
 </div>
-<script src="lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
-<script src="js/lay-config.js?v=2.0.0" charset="utf-8"></script>
+<script src="${pageContext.request.contextPath}/lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+<script src="${pageContext.request.contextPath}/js/lay-config.js?v=2.0.0" charset="utf-8"></script>
 <script>
     layui.use(['jquery', 'layer', 'miniAdmin','miniTongji'], function () {
         var $ = layui.jquery,
@@ -138,8 +139,8 @@
             miniTongji = layui.miniTongji;
 
         var options = {
-            iniUrl: "api/init.json ",    // 初始化接口
-            clearUrl: "api/clear.json", // 缓存清理接口
+            iniUrl: "${pageContext.request.contextPath}/api/init.json ",    // 初始化接口
+            clearUrl: "${pageContext.request.contextPath}/api/clear.json", // 缓存清理接口
             urlHashLocation: true,      // 是否打开hash定位
             bgColorDefault: false,      // 主题默认配置
             multiModule: true,          // 是否开启多模块

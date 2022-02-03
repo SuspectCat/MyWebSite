@@ -1,4 +1,5 @@
 com\mapper\UserMapper.class
+com\commons\VerificationCode.class
 com\pojo\User.class
 com\controller\UserController.class
 com\commons\ResponseResult.class

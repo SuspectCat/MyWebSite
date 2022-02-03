@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 
 @RestController
 @RequestMapping("user")
@@ -21,11 +22,13 @@ public class UserController {
     private String defaultHead;
 
     @PostMapping("login")
-    public ResponseResult login(String username, String password, HttpSession session) {
+    public ResponseResult login(String username, String password, HttpSession session) throws IOException {
         ResponseResult responseResult = userService.userLogin(username, password);
 
         if (200 == responseResult.getCode())
             session.setAttribute("user", responseResult.getData());
+
+
 
         return responseResult;
     }
